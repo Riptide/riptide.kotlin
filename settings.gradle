@@ -1,0 +1,5 @@
+rootProject.name = 'riptide.kotlin'
+
+include ':riptide.messagebus'
+include ':riptide.workflow'
+include ':riptide.protobuf.java'

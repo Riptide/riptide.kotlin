@@ -1,0 +1,3 @@
+[submodule "riptide.protobuf"]
+	path = riptide.protobuf
+	url = git@github.com:Riptide/riptide.protobuf.git

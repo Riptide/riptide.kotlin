@@ -1,0 +1,24 @@
+apply plugin: 'com.google.protobuf'
+
+jar {
+    baseName = 'riptide.protobuf.java'
+}
+
+sourceSets {
+    main {
+        proto {
+            srcDir "$projectDir/../riptide.protobuf"
+        }
+    }
+}
+
+protobuf {
+    protoc {
+        artifact = "com.google.protobuf:protoc:${protocVersion}"
+    }
+    generatedFilesBaseDir = "$projectDir/src"
+}
+
+dependencies {
+    compile("com.google.protobuf:protobuf-java:${protobufJavaVersion}")
+}
